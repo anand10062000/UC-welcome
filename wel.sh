@@ -18,3 +18,9 @@ echo $parttimewage
 else
 echo "absent"
 fi
+workingdays=20
+
+case $rannum in
+1)echo fulltime=$(( $dailyempwage * $workingdays ))"$fulltime";;
+2)echo parttim=$(( $parttimewage * $workingdays))"$parttim";;
+esac
